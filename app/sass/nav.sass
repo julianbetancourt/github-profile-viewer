@@ -1,0 +1,32 @@
+nav
+  height: 60px
+  background: $nav_color
+  .container
+    justify-content: space-between
+  .brand,
+  .search
+    align-self: center
+
+.brand
+  h1
+    font-size: 20px
+    color: white
+    font-weight: 300
+    letter-spacing: .5px
+
+.search-box
+  background: white
+  &::before
+    content: '@'
+    background: white
+    padding: 5px
+    border-radius: 4px
+  input
+    border: none
+    padding: 5px
+    border-radius: 4px
+  i
+    background: #d7d7d7
+    // height: 10px
+    padding: 5px 20px
+    display: inline-block

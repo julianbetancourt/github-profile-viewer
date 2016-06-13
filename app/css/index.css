@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: white;
+  font-family: 'Roboto Condensed'; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.btn {
+  border: 1px solid;
+  padding: 5px 10px; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%; }
+
+#columns {
+  position: relative;
+  top: 40px; }
+
+aside {
+  margin-right: 10%; }
+
+nav {
+  height: 60px;
+  background: #001779; }
+  nav .container {
+    justify-content: space-between; }
+  nav .brand,
+  nav .search {
+    align-self: center; }
+
+.brand h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: .5px; }
+
+.search-box {
+  background: white; }
+  .search-box::before {
+    content: '@';
+    background: white;
+    padding: 5px;
+    border-radius: 4px; }
+  .search-box input {
+    border: none;
+    padding: 5px;
+    border-radius: 4px; }
+  .search-box i {
+    background: #d7d7d7;
+    padding: 5px 20px;
+    display: inline-block; }
+
+.profile-header {
+  background: #0c5d9f;
+  height: 200px;
+  color: white; }
+  .profile-header .container {
+    position: relative; }
+  .profile-header .photo {
+    position: absolute;
+    bottom: -30px;
+    background: white;
+    padding: 5px;
+    border: 1px solid black;
+    height: 100%; }
+    .profile-header .photo img {
+      height: 100%; }
+  .profile-header .name {
+    position: absolute;
+    left: 27%;
+    bottom: 0;
+    height: 34%; }
+    .profile-header .name h2, .profile-header .name h3 {
+      margin: 0;
+      font-weight: 300; }
+    .profile-header .name h2 {
+      font-size: 30px; }
+    .profile-header .name h3 {
+      font-size: 15px; }
+  .profile-header .buttons {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    display: flex; }
+    .profile-header .buttons .btn-group {
+      display: flex;
+      margin-right: 7px; }
+      .profile-header .buttons .btn-group a {
+        cursor: default; }
+
+.about {
+  border: 1px solid #ababab;
+  width: 200px; }
+  .about .item.main {
+    background: #0c5d9f; }
+    .about .item.main h2 {
+      margin: 0;
+      font-weight: 300;
+      color: white;
+      font-size: 20px; }
+  .about .item {
+    padding: 10px;
+    font-size: 14px; }
+    .about .item i {
+      margin-right: 5px; }
+
+.repository {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  padding-bottom: 15px;
+  width: 420px; }
+  .repository .repo-header {
+    display: flex;
+    justify-content: space-between; }
+    .repository .repo-header .language-stars {
+      display: flex;
+      align-self: center; }
+      .repository .repo-header .language-stars .language {
+        margin-right: 6px; }
+  .repository .repo-description {
+    display: flex;
+    flex-direction: column; }
